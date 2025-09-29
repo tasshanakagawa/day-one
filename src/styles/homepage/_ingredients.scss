@@ -1,0 +1,75 @@
+/**
+ * Homepage - Ingredients
+ */
+
+@use "../base" as *;
+
+.ingredients {
+  background-color: $bg-light;
+  padding: 98px 0 194px;
+
+  // Section Header
+  &__header {
+    max-width: 693px;
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    margin-bottom: 31px;
+  }
+
+  .btn {
+    width: 100%;
+    
+    @include respond-to('md') {
+      max-width: 314px;
+    }
+  }
+
+  // Ingredients List
+  &__list {
+    gap: 54px 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+
+  &__image-container {
+    flex-shrink: 0;
+    width: 132px;
+    height: 132px;
+    border-radius: 19px;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text-container {
+    flex-grow: 1;
+    padding-right: 52px;
+  }
+
+  &__ingredient-name {
+    font-family: $font-family-base;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-blue-400;
+    margin-bottom: 11px;
+  }
+
+  &__product-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba($color-blue-400, 0.6);
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+}
