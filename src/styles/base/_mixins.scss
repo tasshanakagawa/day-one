@@ -2,8 +2,8 @@
  * Mixins
  */
 
-@use 'variables' as *;
 @use 'sass:map';
+@use 'variables' as *;
 
 // Mixin for responsive breakpoints
 @mixin respond-to($size) {
