@@ -3,30 +3,28 @@
  */
 
 // Primary Colors
-$blue-100: #EFF7FA;
-$blue-400: #434C6C;
-$blue-900: #292A35;
-$yellow: #FFBA00;
+$color-blue-100: #EFF7FA;
+$color-blue-400: #434C6C;
+$color-blue-900: #292A35;
+$color-yellow: #FFBA00;
 
 // Accents
-$green-dark: #1D3C34;
+$color-green-dark: #1D3C34;
 
 // Neutrals
-$white: #FFFFFF;
-$off-white: #FFFAF6;
-$charcoal: #2E302E;
-$black: #000000;
+$color-white: #FFFFFF;
+$color-off-white: #FFFAF6;
+$color-charcoal: #2E302E;
+$color-black: #000000;
 
 // Semantic Colors
-$accent: $yellow;
+$accent: $color-yellow;
 
-$bg-white: $white;
-$bg-light: $blue-100;
-$bg-dark: $blue-900;
+$bg-white: $color-white;
+$bg-light: $color-blue-100;
+$bg-dark: $color-blue-900;
 
-$text-color-base: $charcoal;
-$text-color-headings-dark: $charcoal;
-$text-color-headings-light: $off-white;
+$text-color-base: $color-charcoal;
 
 // Typography
 $font-family-base: "Roboto Mono", monospace;

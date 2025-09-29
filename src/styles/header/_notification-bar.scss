@@ -1,0 +1,19 @@
+/**
+ * Header - Notification Bar
+ */
+
+@use "../base" as *;
+
+header .notification-bar {
+  background-color: $color-yellow;
+  padding: 6px 0;
+
+  &__message {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.33;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

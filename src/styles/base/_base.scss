@@ -26,11 +26,11 @@ p, ul, ol {
   letter-spacing: -0.83px;
 
   &--light {
-    color: $text-color-headings-light;
+    color: $color-off-white;
   }
 
   &--dark {
-    color: $text-color-headings-dark;
+    color: $color-charcoal;
   }
 
   &--large {
@@ -65,16 +65,16 @@ p, ul, ol {
   transition: all 0.2s ease-in-out;
 
   &--primary {
-    background-color: $yellow;
-    color: $charcoal;
+    background-color: $color-yellow;
+    color: $color-charcoal;
 
     &:hover, &:focus {
-      background-color: $blue-900;
-      color: $white;
+      background-color: $color-blue-900;
+      color: $color-white;
     }
   }
 
   &--dark {
-    background-color: $charcoal;
+    background-color: $color-charcoal;
   }
 }
