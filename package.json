@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "flickity": "^3.0.0",
     "foundation": "^4.2.1-1",
     "foundation-sites": "^6.9.0",
     "jquery": "^3.7.1",
