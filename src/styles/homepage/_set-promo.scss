@@ -1,0 +1,89 @@
+/**
+ * Homepage - Set Promo
+ */
+
+@use "../base" as *;
+
+.set-promo {
+  background-color: $bg-white;
+  border-top: 1px solid $color-charcoal;
+  border-bottom: 1px solid $color-charcoal;
+  padding: 79px 0 68px;
+
+  // Featured Text
+  &__featured-text {
+    display: inline-block;
+    background-color: $color-yellow;
+    padding: 8px 12px;
+    border-radius: 32px;
+    margin-bottom: 28px;
+  }
+
+  // Main Content
+  &__content {
+    > .grid-x {
+      gap: 96px;
+
+      @include respond-to('xl') {
+        gap: 155.99px;
+      }
+    }
+  }
+
+  &__text-container {
+    .btn {
+      width: 100%;
+      
+      @include respond-to('md') {
+        max-width: 380px;
+      }
+    }
+
+    @include respond-to('lg') {
+      max-width: 467px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__divider {
+    margin: 22px 0;
+    border-bottom: 2px solid $color-green-dark;
+    opacity: 0.1;
+  }
+
+  // Checklist
+  &__checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 0 28.62px 0;
+
+    > li {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 13px;
+
+      &:before {
+        content: '';
+        flex-shrink: 0;
+        display: block;
+        width: 22px;
+        height: 19.42px;
+        background-image: url('../../assets/icon-circle-check.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  // Image Container
+  &__image-container {
+    > img {
+      margin: auto;
+    }
+  }
+}

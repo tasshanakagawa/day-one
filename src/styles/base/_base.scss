@@ -58,6 +58,7 @@ p, ul, ol {
   justify-content: center;
   font-family: $font-family-base;
   font-size: 18px;
+  font-weight: 400;
   min-height: 56px;
   padding: 14px;
   border-radius: 100px;
@@ -78,9 +79,21 @@ p, ul, ol {
     background-color: $color-blue-900;
     color: $color-white;
 
+    .text--strike {
+      text-decoration: line-through;
+      color: $color-white;
+      transition: all 0.2s ease-in-out;
+      margin-left: 26px;
+      opacity: 0.43;
+    }
+
     &:hover, &:focus {
       background-color: $color-yellow;
       color: $color-charcoal;
+
+      .text--strike {
+        color: $color-charcoal;
+      }
     }
   }
 }
