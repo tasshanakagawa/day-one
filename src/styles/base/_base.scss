@@ -1,0 +1,49 @@
+/**
+ * Base
+ */
+
+@use "variables" as *;
+@use "mixins" as *;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+}
+
+p, ul, ol {
+  font-family: $font-family-base;
+}
+
+.container {
+  max-width: 1264px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin: auto;
+
+  @include respond-to('xl') {
+    padding: 0;
+  }
+}
+
+.text-heading {
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 52px;
+  letter-spacing: -0.83px;
+
+  &--light {
+    color: $text-color-headings-light;
+  }
+
+  &--dark {
+    color: $text-color-headings-dark;
+  }
+
+  &--large {
+    @include respond-to('lg') {
+      font-size: 80px;
+      line-height: 72px;
+      letter-spacing: -1.33px;
+    }
+  }
+}

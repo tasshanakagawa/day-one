@@ -1,0 +1,12 @@
+/**
+ * Index
+ */
+
+// Foundation
+@use "foundation-sites/dist/css/foundation";
+
+// Custom
+@forward "reset";
+@forward "variables";
+@forward "mixins";
+@forward "base";

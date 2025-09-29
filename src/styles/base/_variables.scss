@@ -1,0 +1,41 @@
+/**
+ * Variables
+ */
+
+// Primary Colors
+$blue-100: #EFF7FA;
+$blue-400: #434C6C;
+$blue-900: #292A35;
+$yellow: #FFBA00;
+
+// Accents
+$green-dark: #1D3C34;
+
+// Neutrals
+$white: #FFFFFF;
+$off-white: #FFFAF6;
+$charcoal: #2E302E;
+$black: #000000;
+
+// Semantic Colors
+$accent: $yellow;
+
+$bg-white: $white;
+$bg-light: $blue-100;
+$bg-dark: $blue-900;
+
+$text-color-base: $charcoal;
+$text-color-headings-dark: $charcoal;
+$text-color-headings-light: $off-white;
+
+// Typography
+$font-family-base: "Roboto Mono", monospace;
+$font-family-headings: "Inter", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 480px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+);
