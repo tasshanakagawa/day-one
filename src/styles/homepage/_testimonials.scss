@@ -95,6 +95,7 @@
     position: absolute;
     bottom: 0;
     width: calc(100% - 20px);
+    align-items: center;
     justify-content: space-between;
     padding: 13px 16px;
     margin: 10px;
@@ -102,6 +103,9 @@
 
     .btn {
       min-width: 92px;
+      min-height: unset;
+      height: 42px;
+      padding: 7px 14px;
     }
   }
 
@@ -118,6 +122,7 @@
   }
 
   &__product-price {
+    font-size: 14px;
     color: $color-blue-400;
   }
 }
