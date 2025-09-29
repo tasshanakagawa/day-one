@@ -35,6 +35,16 @@
   }
 
   // Main Content
+  &__content {
+    > .grid-x {
+      gap: 32px;
+
+      @include respond-to('xl') {
+        gap: 70px;
+      }
+    }
+  }
+
   &__title {
     margin-bottom: 37px;
   }
@@ -75,20 +85,9 @@
   }
 
   &__image-container {
-    padding-top: 70px;
-
     img {
       width: 100%;
       max-width: 568px;
-    }
-
-    @include respond-to('md') {
-      padding-top: 0;
-      padding-left: 24px;
-    }
-
-    @include respond-to('lg') {
-      padding-left: 70px;
     }
   }
 
@@ -99,6 +98,14 @@
     padding: 74px 24px;
     margin-top: 67px;
 
+    > .grid-x {
+      gap: 32px;
+
+      @include respond-to('xl') {
+        gap: 79px;
+      }
+    }
+
     @include respond-to('xl') {
       padding: 74px 38px;
     }
@@ -108,27 +115,15 @@
     display: flex;
     align-items: center;
     gap: 19px;
-    margin-bottom: 32px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     @include respond-to('md') {
       flex-direction: column;
-      padding: 0 12px;
-      margin: 0;
       text-align: center;
-
-      &:last-child {
-        padding: 0;
-      }
     }
 
     @include respond-to('lg') {
       flex-direction: row;
       align-items: center;
-      padding: 0 79px 0 0;
       text-align: left;
     }
   }
@@ -138,7 +133,7 @@
     height: 100px;
     flex-shrink: 0;
 
-    @include respond-to('lg') {
+    @include respond-to('xl') {
       width: 135px;
       height: 135px;
     }
