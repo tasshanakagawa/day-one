@@ -1,0 +1,99 @@
+/**
+ * Navigation Bar
+ */
+
+@use "../base" as *;
+
+header .title-bar {
+  background-color: $color-white;
+  max-width: 1400px;
+  padding: 5px 16px;
+  margin: auto;
+
+  @include respond-to('md') {
+    padding: 5px 20px;
+  }
+
+  .title-bar-left {
+    gap: 16px;
+  }
+
+  .title-bar-right {
+    gap: 29px;
+
+    .btn {
+      min-height: 46px;
+      padding: 9px 14px;
+
+      @include respond-to('md') {
+        width: 201px;
+      }
+    }
+  }
+
+  // Hamburger Menu
+  &__hamburger {
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: $color-charcoal;
+      }
+
+      &.top {
+        transform: translateY(-8px);
+      }
+
+      &.bottom {
+        transform: translateY(8px);
+      }
+    }
+  }
+
+  // Cart
+  &__cart {
+    position: relative;
+
+    .icon {
+      padding: 6px 8.49px 0 0;
+    }
+
+    .count {
+      background-color: $color-black;
+      position: absolute;
+      top: -4px;
+      right: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      font-family: $font-family-base;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-white;
+      text-align: center;
+      border-radius: 30px;
+    }
+  }
+}
+
+header .top-bar {
+  background-color: $color-blue-100;
+  
+  a, a::after {
+    color: $color-charcoal;
+  }
+
+  .dropdown,
+  .submenu {
+    background-color: $color-blue-100;
+  }
+}

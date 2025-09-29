@@ -50,7 +50,9 @@
 
   // Testimonial
   &__testimonial {
-    max-width: 331px;
+    @include respond-to('lg') {
+      max-width: 331px;
+    }
   }
   
   &__rating {

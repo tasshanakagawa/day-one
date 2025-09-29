@@ -74,7 +74,13 @@ p, ul, ol {
     }
   }
 
-  &--dark {
+  &--secondary {
     background-color: $color-charcoal;
+    color: $color-white;
+
+    &:hover, &:focus {
+      background-color: $color-yellow;
+      color: $color-charcoal;
+    }
   }
 }

@@ -63,6 +63,7 @@
 
       &:before {
         content: '';
+        flex-shrink: 0;
         display: block;
         width: 22px;
         height: 19.42px;

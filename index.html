@@ -12,15 +12,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-     <link rel="stylesheet" href="./src/styles/header/index.scss">
+    <link rel="stylesheet" href="./src/styles/header/index.scss">
     <link rel="stylesheet" href="./src/styles/homepage/index.scss">
+
+    <!-- JS -->
+    <script type="module" src="./src/js/main.js"></script>
   </head>
   <body>
     <header>
       <div class="notification-bar">
         <p class="notification-bar__message">Free shipping on us orders over $100</p>
       </div>
-      <div class="header_navbar"></div>
+      <div class="title-bar" data-responsive-toggle="d1-navbar" data-hide-for="">
+        <div class="title-bar-left grid-x align-middle">
+          <button class="title-bar__hamburger" data-toggle="d1-navbar">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </button>
+          <div class="logo-container">
+            <img src="./src/assets/logo-d1.svg" alt="D1" />
+          </div>
+        </div>
+        <div class="title-bar-right grid-x align-middle align-right">
+          <a role="button" href="#" class="btn btn--secondary">Get Started</a>
+          <a href="#" class="title-bar__cart">
+            <img src="./src/assets/icon-cart.png" alt="Cart icon" class="icon" />
+            <span class="count">1</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="top-bar" id="d1-navbar">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li>
+            <a href="#">One</a>
+            <ul class="menu vertical">
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -30,7 +66,7 @@
             <div class="cell large-6 small-order-2 large-order-1 hero-banner__text-container">
               <h1 class="text-heading text-heading--light hero-banner__title">Skincare for Guys That Aren't Into Skincare</h1>
               <p class="hero-banner__description">Try the One Minute Skincare Routine</p>
-              <a href="#" target="_self" class="btn btn--primary">Try Today!</a>
+              <a role="button" href="#" target="_self" class="btn btn--primary">Try Today!</a>
 
               <div class="hero-banner__testimonial">
                 <img src="./src/assets/five-stars.svg" alt="5 stars" class="hero-banner__rating" />
@@ -43,8 +79,8 @@
                 </div>
               </div>
             </div>
-            <div class="cell large-6 small-order-1 large-order-2 hero-banner__image-container">
-              <img src="./src/assets/d1-products.png" alt="3 products of Day One mens' skincare" class="animate-float">
+            <div class="cell large-6 small-order-1 large-order-2 hero-banner__image-container animate-float">
+              <img src="./src/assets/d1-products.png" alt="3 products of Day One mens' skincare" />
               </div>
           </div>
         </div>
