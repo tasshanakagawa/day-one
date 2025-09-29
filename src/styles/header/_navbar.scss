@@ -15,18 +15,27 @@ header .title-bar {
   }
 
   .title-bar-left {
+    flex: unset;
     gap: 16px;
   }
 
   .title-bar-right {
-    gap: 29px;
+    flex-shrink: 0;
+    gap: 8px;
+
+    @include respond-to('md') {
+      gap: 29px;
+    }
 
     .btn {
-      min-height: 46px;
+      font-size: 16px;
+      min-height: unset;
       padding: 9px 14px;
 
       @include respond-to('md') {
         width: 201px;
+        min-height: 46px;
+        font-size: 18px;
       }
     }
   }
